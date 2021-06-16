@@ -23,9 +23,10 @@ CREATE TABLE roles(
 --Employees 
 CREATE TABLE employees(
     id INT AUTO_INCREMENT PRIMARY KEY,
-    title VARCHAR(30),
-    salary DECIMAL,
-    role_id INT NOT NULL
-    FOREIGN KEY (role_id)
-    REFERENCES role(id)
+    first_name VARCHAR(30),
+    last_name VARCHAR(30),
+    role_id INT NOT NULL,
+    manager_id INT UNSIGNED,
+    FOREIGN KEY (role_id) 
+    REFERENCES roles(id)
 );

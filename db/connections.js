@@ -8,8 +8,9 @@ const connection = mysql2.createConnection({
 });
 connection.connect(function(error)
 {
-    if (result.error)
+    if (error)
     throw (error)
 });
-console.log(result.parsed)
+// console.log(result.parsed)
+console.log('success');
 module.exports = connection;
