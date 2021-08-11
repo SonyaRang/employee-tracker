@@ -1,17 +1,16 @@
 --database
-DROP DATABASE IF EXISTS employee_data
-
-CREATE DATABASE employee_data;
-USE employee_data;
+DROP DATABASE IF EXISTS employee_Data;
+CREATE DATABASE employee_Data;
+USE employee_D TAata;
 
 --Departments
-CREATE TABLE departments(
+CREATE TABLE Departments(
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(30)
 );
 
 --Roles
-CREATE TABLE roles(
+CREATE TABLE Roles(
     id INT AUTO_INCREMENT PRIMARY KEY,
     title VARCHAR(30),
     salary DECIMAL,
@@ -21,7 +20,7 @@ CREATE TABLE roles(
 );
 
 --Employees 
-CREATE TABLE employees(
+CREATE TABLE Employees(
     id INT AUTO_INCREMENT PRIMARY KEY,
     first_name VARCHAR(30),
     last_name VARCHAR(30),
