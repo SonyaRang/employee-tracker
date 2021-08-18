@@ -1,7 +1,7 @@
 --database
 DROP DATABASE IF EXISTS employee_Data;
 CREATE DATABASE employee_Data;
-USE employee_D TAata;
+USE employee_Data;
 
 --Departments
 CREATE TABLE Departments(
